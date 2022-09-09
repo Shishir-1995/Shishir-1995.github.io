@@ -1,0 +1,38 @@
+:root {
+	--dark-text-color: #850e35;
+	--main-bg: #fff5e4;
+	--imp-bg: #ee6983;
+	--peripheral-bg: #ffc4c4;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.header {
+	background-color: var(--imp-bg);
+	width: 80%;
+	height: 200px;
+	margin: auto;
+}
+
+.main {
+	display: flex;
+	flex-wrap: wrap;
+	width: 80%;
+	margin: auto;
+}
+
+.projects {
+	background-color: var(--peripheral-bg);
+	height: 200px;
+	width: 50%;
+}
+
+.intro {
+	background-color: var(--main-bg);
+	height: 200px;
+	width: 50%;
+}
