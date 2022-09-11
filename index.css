@@ -1,38 +1,103 @@
 :root {
-	--dark-text-color: #850e35;
-	--main-bg: #fff5e4;
-	--imp-bg: #ee6983;
-	--peripheral-bg: #ffc4c4;
+	--body-bg: #ffc6adff;
+	--container-bg: #ffd5c3ff;
+	--text-color: #b63701ff;
+	--btn-hover-bg: #fe763eff;
+	--btn-bg: #dee1e6ff;
+	--container2-bg: #ffa57fff;
+	--dark-text: #b63701ff;
 }
-
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	text-decoration: none;
 }
 
-.header {
-	background-color: var(--imp-bg);
-	width: 80%;
-	height: 200px;
+body {
+	background-color: var(--body-bg);
+}
+
+nav {
+	background-color: var(--container-bg);
+}
+
+#navbar {
+	width: 90%;
 	margin: auto;
-}
-
-.main {
 	display: flex;
-	flex-wrap: wrap;
-	width: 80%;
+	justify-content: space-between;
+	padding: 1em 0;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+}
+
+nav ul li {
+	margin: 0 1em;
+}
+nav ul li:last-child {
+	margin-right: 0;
+}
+
+header {
+	height: 85vh;
+	width: 90%;
 	margin: auto;
+	margin-top: 2.5vw;
+	border-radius: 1%;
+	background-color: var(--container-bg);
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
 }
 
-.projects {
-	background-color: var(--peripheral-bg);
-	height: 200px;
+#pic_container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	border: 2px solid red;
 	width: 50%;
 }
 
-.intro {
-	background-color: var(--main-bg);
-	height: 200px;
-	width: 50%;
+#pic_container img {
+	width: 309px;
+	height: 396px;
+	border-radius: 155px;
+	object-fit: cover;
+}
+
+#pic_container button {
+	width: 154px;
+	height: 40px;
+	margin-top: 2em;
+	padding: 0 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: Public Sans;
+	font-size: 14px;
+	line-height: 22px;
+	color: var(--text-color);
+	background: var(--btn-bg);
+	opacity: 1;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+}
+
+#pic_container button:hover {
+	background-color: var(--btn-hover-bg);
+	color: var(--btn-bg);
+}
+span {
+	color: var(--dark-text);
+}
+
+#text_change {
+	text-transform: uppercase;
+	text-decoration: underline;
 }
