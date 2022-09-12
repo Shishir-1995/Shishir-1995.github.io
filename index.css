@@ -17,9 +17,19 @@
 body {
 	background-color: var(--body-bg);
 }
+html {
+	scroll-behavior: smooth;
+}
 
 nav {
-	background-color: var(--container-bg);
+	background: linear-gradient(
+		to bottom,
+		var(--container-bg),
+		var(--container2-bg)
+	);
+	position: sticky;
+	top: 0;
+	/* box-shadow: 4px 4px var(--container2-bg); */
 }
 
 #navbar {
@@ -99,4 +109,15 @@ span {
 #text_change {
 	text-transform: uppercase;
 	text-decoration: underline;
+}
+
+#projects,
+#skills,
+#contact {
+	background-color: var(--container-bg);
+	width: 90%;
+	margin: auto;
+	height: 90vh;
+	margin-top: 2.5vw;
+	border-radius: 1%;
 }
