@@ -1,5 +1,4 @@
 let listOfSkills = [
-	"Java",
 	"Spring Boot",
 	"Hibernate",
 	"JavaScript",
@@ -9,6 +8,7 @@ let listOfSkills = [
 	"Python",
 	"Data Structures",
 	"Algorithms",
+	"Java",
 ];
 
 let skill_list = 0;
@@ -19,4 +19,4 @@ const textId = setInterval(() => {
 	if (skill_list == listOfSkills.length) {
 		skill_list = 0;
 	}
-}, 2000);
+}, 1500);
