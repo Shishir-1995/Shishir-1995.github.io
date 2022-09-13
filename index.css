@@ -3,13 +3,7 @@
 	--noraml-text: #dee1e6ff;
 	--highlight-text: #fe763eff;
 	--container-bg: #303336ff;
-
 	--body-bg: #4c4c4cff;
-	--text-color: rgb(1, 49, 182);
-	--btn-hover-bg: rgb(62, 193, 254);
-	--btn-bg: #dee1e6ff;
-	--container2-bg: #ffa57fff;
-	--dark-text: #b63701ff;
 }
 * {
 	margin: 0;
@@ -38,6 +32,7 @@ nav {
 	position: sticky;
 	top: 0;
 	box-shadow: 0px 4px 9px #474746, 0px 0px 2px #5d5f61;
+	z-index: 1000;
 }
 
 #navbar {
@@ -132,16 +127,14 @@ span {
 	border-radius: 1%;
 }
 
-.skill-sect {
-	width: 90%;
-	text-align: center;
-	height: 50%;
-	margin: auto;
-}
-
 .tech_icons {
-	display: flex;
-	justify-content: space-evenly;
+	width: inherit;
+	height: inherit;
+	position: absolute;
+	left: 0%;
+	top: 0%;
+	/* border: 2px solid green; */
+	align-items: center;
 }
 
 .sect {
@@ -149,4 +142,46 @@ span {
 	flex-direction: column;
 	width: 100%;
 	margin: auto;
+}
+
+.infinite_scroll {
+	display: flex;
+	/* margin-top: 200px; */
+	/* border: 2px solid red; */
+	position: relative;
+	width: 100%;
+	margin: auto;
+	height: 10rem;
+	overflow-x: hidden;
+}
+
+.primary {
+	animation: primary 7s linear infinite;
+}
+
+.secondary {
+	animation: secondary 7s linear infinite;
+}
+
+@keyframes primary {
+	from {
+		left: 0%;
+	}
+	to {
+		left: -100%;
+	}
+}
+@keyframes secondary {
+	from {
+		left: 100%;
+	}
+	to {
+		left: 0%;
+	}
+}
+
+.tech-sect {
+	margin-top: 2rem;
+	padding-top: 4rem;
+	height: 20rem;
 }
