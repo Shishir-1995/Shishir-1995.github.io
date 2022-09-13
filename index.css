@@ -135,9 +135,13 @@ span {
 .skill-sect {
 	width: 90%;
 	text-align: center;
-	border: 2px solid red;
 	height: 50%;
 	margin: auto;
+}
+
+.tech_icons {
+	display: flex;
+	justify-content: space-evenly;
 }
 
 .sect {
