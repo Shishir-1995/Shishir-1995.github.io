@@ -6,108 +6,192 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
     <title>Shishir Padhan</title>
 </head>
 
-<body>
-    <nav>
-        <div id="navbar">
-            <a href="#"><img src="" alt="Shishir Padhan"></a>
-            <div>
-                <ul>
-                    <li> <a href="#About_section">About</a> </li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <header id="About_section">
-
-        <div id="pic_container">
-            <img src="images/pro_pic.png" alt="">
-            <button>Resume</button>
-        </div>
-        <div id="about_desc">
-            <p class="head_text main_text">Hi There ! I am <span>Shishir</span></p>
-            <p class="head_text text1 contain_text">I am a Full Stack Web Developer with knowledge on
-                <span id="text_change">Java</span>
-            </p>
-            <p class="head_text text2 contain_text">I like creating user-centric
-                <span>Products</span> with a touch of
-                <span>Creativity</span>,
-                <span>Minimalism</span> and
-                bucket load of <span>Passion</span>.
-            </p>
-        </div>
-    </header>
-
-    <main>
-
-        <div id="projects">
-            <div>
-                <h2>Projects</h2>
-                <div class="project_carousel">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+<body class="bg-dark">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="" alt="">Shishir</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse  text-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nav_icons">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#About">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#Projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#Skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#Contact">Contact</a>
+                        </li>
+                        <button class="btn btn-primary" id="resume_btn">Resume</button>
+                    </ul>
                 </div>
             </div>
-        </div>
-
-        <div id="skills">
-            <h2>Skills</h2>
-            <div class="sect">
-                <div class="tech-sect skill-sect">
-                    <h3>Technical Skills</h3>
-                    <div class="infinite_scroll">
-                        <div class="tech_icons primary">
-                            <img src="images/tech-icons/java.png" alt="">
-                            <img src="images/tech-icons/hibernate.png" alt="">
-                            <img src="images/tech-icons/spring.png" alt="">
-                            <img src="images/tech-icons/js.png" alt="">
-                            <img src="images/tech-icons/mysql.png" alt="">
-                            <img src="images/tech-icons/git.png" alt="">
-                            <img src="images/tech-icons/html.png" alt="">
-                            <img src="images/tech-icons/css.png" alt="">
-                            <img src="images/tech-icons/aws.png" alt="">
+        </nav>
+        <div>
+            <header>
+                <div class="container text-center " id="About" style="padding-top: 3.8rem;margin-top: 0;">
+                    <div class="row ">
+                        <div class="col-md-6 ">
+                            <img src="images/pro_pic.png"
+                                style="width: 20rem;height: 30rem; border-radius: 155px; object-fit: cover;" alt="">
                         </div>
-                        <div class="tech_icons secondary">
-                            <img src="images/tech-icons/java.png" alt="">
-                            <img src="images/tech-icons/hibernate.png" alt="">
-                            <img src="images/tech-icons/spring.png" alt="">
-                            <img src="images/tech-icons/js.png" alt="">
-                            <img src="images/tech-icons/mysql.png" alt="">
-                            <img src="images/tech-icons/git.png" alt="">
-                            <img src="images/tech-icons/html.png" alt="">
-                            <img src="images/tech-icons/css.png" alt="">
-                            <img src="images/tech-icons/aws.png" alt="">
+                        <div class="col-md-6 d-flex align-items-center justify-content-start" style="color: white;">
+                            <div class="container ">
+                                <p class="head_text main_text">Hi There ! I am <span class="imp_text"
+                                        id="about_name">Shishir</span></p>
+                                <p class="head_text text1 contain_text">I am a Full Stack Web Developer with knowledge
+                                    on
+                                </p>
+                                <p>
+                                    <span id="text_change" class="imp_text">Java</span>
+
+                                </p>
+                                <p class="head_text text2 contain_text">I like creating user-centric
+                                    <span>Products</span> with a touch of
+                                    <span>Creativity</span>,
+                                    <span>Minimalism</span> and
+                                    bucket load of <span>Passion</span>.
+                                </p>
+
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="soft-sect skill-sect">
-                    <h3>Soft Skills</h3>
+            </header>
+
+            <main style="margin-top: 4rem;">
+                <div class="fluid-container" id="Projects">
+                    <h1 class="text-center">Projects</h1>
+                    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://images.unsplash.com/photo-1532354058425-ba7ccc7e4a24?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                                    class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>First slide label</h5>
+                                    <p>Some representative placeholder content for the first slide.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://images.unsplash.com/photo-1642132652860-471b4228023e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80"
+                                    class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>First slide label</h5>
+                                    <p>Some representative placeholder content for the first slide.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://images.unsplash.com/photo-1516101922849-2bf0be616449?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80"
+                                    class="d-block w-100 " alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>First slide label</h5>
+                                    <p>Some representative placeholder content for the first slide.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </div>
+
+                <div class="fluid-container" id="Skills">
+                    <h1 class="text-center">Skills</h1>
+                    <div class="tech_skill_section">
+                        <h3 class="text-center">Technical Skills</h3>
+                        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner "">
+                            <div class=" carousel-item" data-bs-interval="2000">
+                                <div class="d-flex justify-content-around">
+
+                                    <img src="images/tech-icons/java.png" alt="">
+                                    <img src="images/tech-icons/hibernate.png" alt="">
+                                    <img src="images/tech-icons/spring.png" alt="">
+                                </div>
+                            </div>
+                            <div class="carousel-item active" data-bs-interval="2000">
+                                <div class="d-flex justify-content-around">
+                                    <img src="images/tech-icons/js.png" alt="">
+                                    <img src="images/tech-icons/mysql.png" alt="">
+                                    <img src="images/tech-icons/git.png" alt="">
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <div class="d-flex justify-content-around">
+                                    <img src="images/tech-icons/html.png" alt="">
+                                    <img src="images/tech-icons/css.png" alt="">
+                                    <img src="images/tech-icons/aws.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="soft_skill_section">
+                        <h3 class="text-center">Soft Skill</h3>
+                        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <p>Work Ethics</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <p>Discipline</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <p>Team Player</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <p>Goal Oriented</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <p>Organized</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <p>Social Adaptibility</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="fluid-container" id="Contact">
+            <h1 class="text-center">Contact</h1>
+            <div class="d-flex">
+
             </div>
         </div>
-
-        <div id="contact">
-            <h2>Contact</h2>
-            <div></div>
-            <div></div>
-        </div>
-    </main>
-
-    <footer>
-        <div></div>
-    </footer>
-
-
-
+        </main>
 </body>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 <script src="index.js"></script>
 
 </html>
