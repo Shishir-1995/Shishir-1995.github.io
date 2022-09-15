@@ -8,213 +8,264 @@
     <link rel="stylesheet" href="index.css">
     <link rel="shortcut icon" href="images/logo.png" type="image">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <title>Shishir Padhan</title>
 </head>
 
-<body class="bg-dark">
-    <div class="container">
-        <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="" alt="">Shishir</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse  text-center" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nav_icons">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#About">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#Projects">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#Skills">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#Contact">Contact</a>
-                        </li>
-                        <button class="btn btn-primary" id="resume_btn">Resume</button>
-                    </ul>
+<body>
+    <nav class="navbar navbar-expand-lg dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" id="nav_icon">SP</a>
+            <button class=" navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse  text-center" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 " id="nav_icons">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#About" id="nav_icon">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#Projects" id="nav_icon">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#Skills" id="nav_icon">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#Contact" id="nav_icon">Contact</a>
+                    </li>
+                    <button class="btn btn-primary" id="resume_btn"><a href="documents/Shishir_Padhan_Resume.pdf"
+                            download="Shishir_Padhan_Resume.pdf" style="color: white; text-decoration: none;">Resume</a>
+                    </button>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container text-center " id="About" style="padding: 3.8rem;margin-top: 0;">
+            <div class="row ">
+                <div class="col-md-6 ">
+                    <img src="images/pro_pic.png"
+                        style="width: 20rem;height: 30rem; border-radius: 155px; object-fit: cover;" alt="">
+                </div>
+                <div class="col-md-6 d-flex align-items-center justify-content-start" id="about_description">
+                    <div class="container ">
+                        <p class="head_text main_text">Hi There ! I am <span class="imp_text"
+                                id="about_name">Shishir</span></p>
+                        <p class="head_text text1 contain_text">I am a Full Stack Web Developer with knowledge
+                            on
+                        </p>
+                        <p>
+                            <span id="text_change" class="imp_text">Java</span>
+
+                        </p>
+                        <p class="head_text text2 contain_text">I like creating user-centric
+                            <span>Products</span> with a touch of
+                            <span>Creativity</span>,
+                            <span>Minimalism</span> and
+                            bucket load of <span>Passion</span>.
+                        </p>
+
+                    </div>
                 </div>
             </div>
-        </nav>
-        <div>
-            <header>
-                <div class="container text-center " id="About" style="padding-top: 3.8rem;margin-top: 0;">
-                    <div class="row ">
-                        <div class="col-md-6 ">
-                            <img src="images/pro_pic.png"
-                                style="width: 20rem;height: 30rem; border-radius: 155px; object-fit: cover;" alt="">
+        </div>
+    </header>
+
+    <main style="margin-top: 4rem;">
+        <div class="fluid-container" id="Projects">
+            <h1 class="text-center">Projects</h1>
+            <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+
+                        <img src="images/Projects/Expedia-2.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption-2 d-md-block container">
+                            <h5>EXPEDIA- CLONE</h5>
+                            <p>A Travel Booking website</p>
+                            <p>TECH STACK : HTML | CSS | JAVASCRIPT | BOOTSTRAP</p>
+                            <div class="d-flex justify-content-around">
+                                <button class="btn btn-primary margin-right-10px"><a
+                                        href=" https://github.com/Shishir-1995/Expedia" target="_blank"
+                                        style="color: white; text-decoration: none;">GITHUB</a> </button>
+                                <button class="btn btn-primary "><a
+                                        href="https://vermillion-sopapillas-3df9c0.netlify.app/" target="_blank"
+                                        style="color: white; text-decoration: none;">LIVE</a> </button>
+                            </div>
                         </div>
-                        <div class="col-md-6 d-flex align-items-center justify-content-start" style="color: white;">
-                            <div class="container ">
-                                <p class="head_text main_text">Hi There ! I am <span class="imp_text"
-                                        id="about_name">Shishir</span></p>
-                                <p class="head_text text1 contain_text">I am a Full Stack Web Developer with knowledge
-                                    on
-                                </p>
-                                <p>
-                                    <span id="text_change" class="imp_text">Java</span>
-
-                                </p>
-                                <p class="head_text text2 contain_text">I like creating user-centric
-                                    <span>Products</span> with a touch of
-                                    <span>Creativity</span>,
-                                    <span>Minimalism</span> and
-                                    bucket load of <span>Passion</span>.
-                                </p>
-
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/Projects/TIc-tac-2.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption-2  d-md-block">
+                            <h5>TIC-TAC-TOE</h5>
+                            <p>2-Player Game with Bot</p>
+                            <p>TECH STACK : HTML | CSS | JAVASCRIPT | BOOTSTRAP</p>
+                            <div class="d-flex justify-content-around">
+                                <button class="btn btn-primary"><a href=" https://github.com/Shishir-1995/Tic-Tac-Toe"
+                                        target="_blank" style="color: white; text-decoration: none;">GITHUB</a>
+                                </button>
+                                <button class="btn btn-primary"><a href="https://immortal-tic-tac.netlify.app"
+                                        target="_blank" style="color: white; text-decoration: none;">LIVE</a> </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1516101922849-2bf0be616449?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80"
+                            class="d-block w-100 " alt="...">
+                        <div class="carousel-caption-2 d-md-block">
+                            <h5>First slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                            <div class="d-flex justify-content-around">
+                                <button class="btn btn-primary"><a href=""
+                                        style="color: white; text-decoration: none;">GITHUB</a> </button>
+                                <button class="btn btn-primary"><a href=""
+                                        style="color: white; text-decoration: none;">LIVE</a> </button>
                             </div>
                         </div>
                     </div>
                 </div>
-            </header>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
 
-            <main style="margin-top: 4rem;">
-                <div class="fluid-container" id="Projects">
-                    <h1 class="text-center">Projects</h1>
-                    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                                class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="https://images.unsplash.com/photo-1532354058425-ba7ccc7e4a24?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-                                    class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>First slide label</h5>
-                                    <p>Some representative placeholder content for the first slide.</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://images.unsplash.com/photo-1642132652860-471b4228023e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80"
-                                    class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>First slide label</h5>
-                                    <p>Some representative placeholder content for the first slide.</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://images.unsplash.com/photo-1516101922849-2bf0be616449?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80"
-                                    class="d-block w-100 " alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>First slide label</h5>
-                                    <p>Some representative placeholder content for the first slide.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </div>
+        <div class="fluid-container" id="Skills">
+            <h1 class="text-center">Skills</h1>
+            <div class="tech_skill_section">
+                <h3 class="text-center">Technical Skills</h3>
+                <section class="techstack">
+                    <div class="slider">
+                        <div class="slide-track">
 
-                <div class="fluid-container" id="Skills">
-                    <h1 class="text-center">Skills</h1>
-                    <div class="tech_skill_section">
-                        <h3 class="text-center">Technical Skills</h3>
-                        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner "">
-                            <div class=" carousel-item" data-bs-interval="2000">
-                                <div class="d-flex justify-content-around">
-                                    <span class="ele">
-                                        <img src="images/tech-icons/java.png" alt="">
-                                        JAVA
-                                    </span>
-                                    <span class="ele">
-                                        <img src="images/tech-icons/hibernate.png" alt="">
-                                        HIBERNATE
-                                    </span>
-                                    <span class="ele">
-                                        <img src="images/tech-icons/spring.png" alt="">
-                                        SPRING BOOT
-                                    </span>
-                                </div>
+                            <div class="slide">
+                                <img src="images/tech-icons/java.png" height="75" width="250" alt="">
+                                JAVA
                             </div>
-                            <div class="carousel-item active" data-bs-interval="2000">
-                                <div class="d-flex justify-content-around">
-                                    <span class="ele">
-                                        <img src="images/tech-icons/js.png" alt="">
-                                        JavaScript
-                                    </span>
-                                    <span class="ele">
-                                        <img src="images/tech-icons/mysql.png" alt="">
-                                        MySQL
-                                    </span>
-                                    <span class="ele">
-                                        <img src="images/tech-icons/git.png" alt="">
-                                        GIT
-                                    </span>
-                                </div>
+                            <div class="slide">
+                                <img src="images/tech-icons/spring.png" height="75" width="100" alt="">
+                                SPRING
                             </div>
-                            <div class="carousel-item" data-bs-interval="2000">
-                                <div class="d-flex justify-content-around">
-                                    <span class="ele">
-                                        <img src="images/tech-icons/html.png" alt="">
-                                        HTML5
-                                    </span>
-                                    <span class="ele">
-                                        <img src="images/tech-icons/css.png" alt="">
-                                        CSS3
-                                    </span>
-                                    <span class="ele">
-                                        <img src="images/tech-icons/aws.png" alt="">
-                                        AWS
-                                    </span>
-                                </div>
+                            <div class="slide">
+                                <img src="images/tech-icons/hibernate.png" height="75" width="250" alt="">
+                                HIBERNATE
+                            </div>
+                            <div class="slide">
+                                <img src="images/tech-icons/mysql.png" width="100" alt="">
+                                MYSQL
+                            </div>
+                            <div class="slide">
+                                <img src="images/tech-icons/js.png" height="75" width="250" alt="">
+                                JAVASCRIPT
+                            </div>
+                            <div class="slide">
+                                <img src="images/tech-icons/html.png" height="75" width="150" alt="">
+                                HTML 5
+                            </div>
+                            <div class="slide">
+                                <img src="images/tech-icons/css.png" height="75" width="250" alt="">
+                                CSS 3
+                            </div>
+                            <div class="slide">
+                                <img src="images/tech-icons/aws.png" height="75" width="250" alt="">
+                                AWS
+                            </div>
+                            <div class="slide">
+                                <img src="images/tech-icons/git.png" height="75" width="250" alt="">
+                                GIT
+                            </div>
+                            <div class="slide">
+                                <img src="images/tech-icons/java.png" height="75" width="250" alt="">
+                                JAVA
+                            </div>
+                            <div class="slide">
+                                <img src="images/tech-icons/spring.png" height="75" width="100" alt="">
+                                SPRING
+                            </div>
+                            <div class="slide">
+                                <img src="images/tech-icons/hibernate.png" height="75" width="250" alt="">
+                                HIBERNATE
+                            </div>
+                            <div class="slide">
+                                <img src="images/tech-icons/mysql.png" width="100" alt="">
+                                MYSQL
+                            </div>
+                            <div class="slide">
+                                <img src="images/tech-icons/js.png" height="75" width="250" alt="">
+                                JAVASCRIPT
+                            </div>
+                            <div class="slide">
+                                <img src="images/tech-icons/html.png" height="75" width="150" alt="">
+                                HTML 5
+                            </div>
+                            <div class="slide">
+                                <img src="images/tech-icons/css.png" height="75" width="250" alt="">
+                                CSS 3
+                            </div>
+                            <div class="slide">
+                                <img src="images/tech-icons/aws.png" height="75" width="250" alt="">
+                                AWS
+                            </div>
+                            <div class="slide">
+                                <img src="images/tech-icons/git.png" height="75" width="250" alt="">
+                                GIT
                             </div>
                         </div>
                     </div>
+                </section>
 
-                    <div class="soft_skill_section">
-                        <h3 class="text-center">Soft Skill</h3>
-                        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <p>Work Ethics</p>
-                                </div>
-                                <div class="carousel-item">
-                                    <p>Discipline</p>
-                                </div>
-                                <div class="carousel-item">
-                                    <p>Team Player</p>
-                                </div>
-                                <div class="carousel-item">
-                                    <p>Goal Oriented</p>
-                                </div>
-                                <div class="carousel-item">
-                                    <p>Organized</p>
-                                </div>
-                                <div class="carousel-item">
-                                    <p>Social Adaptibility</p>
-                                </div>
-                            </div>
+            </div>
+
+            <div class="soft_skill_section">
+                <h3 class="text-center">Soft Skill</h3>
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <p>Work Ethics</p>
+                        </div>
+                        <div class="carousel-item">
+                            <p>Discipline</p>
+                        </div>
+                        <div class="carousel-item">
+                            <p>Team Player</p>
+                        </div>
+                        <div class="carousel-item">
+                            <p>Goal Oriented</p>
+                        </div>
+                        <div class="carousel-item">
+                            <p>Organized</p>
+                        </div>
+                        <div class="carousel-item">
+                            <p>Social Adaptibility</p>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
         </div>
 
         <div class="fluid-container" id="Contact">
             <h1 class="text-center">Contact</h1>
-            <div class="d-flex">
+            <div class="row">
+                <div class="col" id="contact-img">
+                    <img src="images/contact-icon/linkedin.png" alt="">
+                    <img src="images/contact-icon/github.png" alt="">
+                    <img src="images/contact-icon/whatsapp.png" alt="">
+                    <img src="images/contact-icon/telegram.png" alt="">
+                </div>
 
             </div>
         </div>
-        </main>
+    </main>
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
