@@ -6,7 +6,7 @@
 	--body-bg: #4c4c4cff;
 	--dark-bg: rgb(165, 165, 165);
 	--light-bg: rgb(248, 244, 244);
-	--masai-red: rgb(219, 6, 49);
+	--masai-red: rgb(207, 40, 71);
 	--button-blue: rgb(0, 0, 219);
 }
 
@@ -30,6 +30,10 @@ span {
 .dark {
 	color: var(--light-bg);
 	background-color: var(--dark-bg);
+}
+
+#nav-ic {
+	padding: 0.5rem 3rem;
 }
 
 .ele {
@@ -80,7 +84,7 @@ h3 {
 #Projects,
 #Skills,
 #Contact {
-	height: 100vh;
+	min-height: 100vh;
 	padding-top: 3rem;
 }
 
@@ -119,18 +123,10 @@ h3 {
 	font-weight: 600;
 }
 
-/* .carousel-item img {
+.carousel-item img {
 	object-fit: contain;
 	height: min-content;
 }
-
-.carousel-caption-2 h5,
-.carousel-caption-2 p {
-	color: rgb(19, 0, 126);
-	display: flex;
-	justify-content: center;
-	margin: auto;
-} */
 
 main {
 	background-color: whitesmoke;
@@ -141,56 +137,62 @@ main {
 	align-items: center;
 	flex-wrap: wrap;
 	justify-content: center;
-	/* height: 6rem; */
 }
 
-/* .slider { */
-/* background-color: whitesmoke; */
-/* box-shadow: 0px 10px 20px -5px rgb(0, 0, 0);
-	padding: 50px;
-	overflow: hidden;
-	position: relative;*/
-/* display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center; */
-/* } */
-
-/* .slider::before,
-.slider::after {
-	content: "";
-	height: 10px;
-	position: absolute;
-	width: 200px;
-	z-index: 2;
-}
-.slider .slide-track {
-	animation: scroll 40s linear infinite;
-	display: flex;
-	width: calc(250px * 17);
-} */
-@keyframes scroll {
-	0% {
-		transform: translateX(0);
-	}
-	100% {
-		transform: translateX(calc(-250px * 9));
-	}
-}
-
-.slide {
+.col-sm-6 {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
-.slide-track {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
-}
 
 #contact-img img {
-	width: 128px;
+	width: 64px;
+	margin: auto;
+}
+
+#contact-img {
+	background-color: grey;
+	padding: 1em;
+}
+
+@media screen and (max-width: 746px) {
+	#contact-img img {
+		width: 32px;
+		margin: auto;
+	}
+}
+
+.contact,
+.form {
+	display: flex;
+	width: 70%;
+	margin: auto;
+	flex-direction: column;
+}
+
+.form {
+	width: 80%;
+	gap: 2rem;
+	padding: 1rem 0;
+}
+.form input,
+textarea {
+	padding: 1rem;
+	font-size: 1.5rem;
+	border-radius: 10px;
+	background-color: #ebeff3;
+}
+.form input:last-child {
+	background-color: #56617a;
+	color: #f16856;
+	font-weight: 700;
+	font-size: 1.5rem;
+	border: transparent;
+	transition: 0.35s all ease;
+}
+.form input:last-child:hover {
+	background-color: #f16856;
+	color: #e3e3e3;
+	cursor: pointer;
 }
