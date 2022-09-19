@@ -25,3 +25,9 @@ const myCarouselElement = document.querySelector("#carouselExampleFade");
 const carousel = new bootstrap.Carousel(myCarouselElement, {
 	interval: 2000,
 });
+
+GitHubCalendar(".calendar", "Shishir-1995", {
+	responsive: true,
+	tooltips: true,
+	global_stats: false,
+});

@@ -230,3 +230,9 @@ textarea {
 .tech-stack {
 	font-weight: 700;
 }
+
+.calendar {
+	background-color: rgb(32 33 36);
+	color: var(--masai-red);
+	fill: var(--masai-red);
+}
