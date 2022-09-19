@@ -47,7 +47,8 @@ span {
 
 h1,
 h3 {
-	color: blue;
+	color: var(--masai-red);
+	font-weight: 600;
 }
 
 .imp_text {
@@ -64,8 +65,9 @@ h3 {
 }
 
 #resume_btn {
-	background-color: var(--button-blue);
-	border: var(--button-blue);
+	background-color: var(--masai-red);
+	border: var(--masai-red);
+	color: black;
 }
 
 .navbar {
@@ -87,10 +89,15 @@ h3 {
 #Contact {
 	min-height: 100vh;
 	padding-top: 3rem;
+	margin-bottom: 2em;
 }
 
 #Projects img {
 	height: 60vh;
+}
+
+#Skills {
+	background-color: black;
 }
 
 #Skills img {
@@ -112,7 +119,7 @@ h3 {
 }
 
 .soft_skill_section p {
-	color: var(--normal-text);
+	color: var(--light-bg);
 	text-transform: uppercase;
 	font-size: 40px;
 	text-align: center;
@@ -153,8 +160,8 @@ main {
 }
 
 #contact-img {
-	background-color: grey;
-	padding: 1em;
+	/* background-color: grey; */
+	padding: 1rem 5rem;
 }
 
 @media screen and (max-width: 746px) {
@@ -185,15 +192,41 @@ textarea {
 	background-color: #ebeff3;
 }
 .form input:last-child {
-	background-color: #56617a;
-	color: #f16856;
+	background-color: rgb(32 33 36);
+	color: var(--masai-red);
 	font-weight: 700;
 	font-size: 1.5rem;
 	border: transparent;
 	transition: 0.35s all ease;
 }
 .form input:last-child:hover {
-	background-color: #f16856;
-	color: #e3e3e3;
+	background-color: var(--masai-red);
+	color: rgb(32 33 36);
 	cursor: pointer;
+}
+
+.slide {
+	color: var(--masai-red);
+}
+
+#btn-project {
+	background-color: var(--masai-red);
+	border-color: var(--masai-red);
+}
+
+#btn-project > a {
+	color: rgb(32 33 36);
+}
+
+#btn-project:hover {
+	background-color: white;
+	border: var(--masai-red);
+}
+
+#btn-project > a:hover {
+	color: var(--masai-red);
+}
+
+.tech-stack {
+	font-weight: 700;
 }
