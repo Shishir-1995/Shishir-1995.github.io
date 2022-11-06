@@ -2,299 +2,497 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <link rel="shortcut icon" href="images/logo.png" type="image">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
-    <title>Shishir Padhan</title>
+
+    <title>Shishir Padhan | Home</title>
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Varela" rel="stylesheet">
+
+    <!-- Favicon
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="icon" sizes="16x16" href="assets/img/favicon.ico">
+    <link rel="manifest" href="assets/img/manifest.json">
+    <link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Stylesheets
+    ================================================== -->
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!-- Font Awesome core CSS -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="assets/css/proj-card.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md dark sticky-top navbar-dark " id="nav-ic">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#" id="nav_icon">SP</a>
-            <button class=" navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse  text-center" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 " id="nav_icons">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#About" id="nav_icon">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="#Projects" id="nav_icon">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="#Skills" id="nav_icon">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="#Contact" id="nav_icon">Contact</a>
-                    </li>
-                    <button class="btn btn-primary" id="resume_btn"><a href="documents/Shishir-Padhan-Resume.pdf"
-                            download="Shishir-Padhan-Resume.pdf"
-                            style="color: rgb(0, 0, 0); text-decoration: none; font-weight: 700;font-size: 1.1em;">R e s
-                            u m e</a>
-                    </button>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
-
-    <header>
-        <div class="container text-center " id="About" style="padding: 3.8rem;margin-top: 0;">
-            <div class="row ">
-                <div class="col-md-6 ">
-                    <img src="images/pro_pic.png"
-                        style="width: 20rem;height: 30rem; border-radius: 155px; object-fit: cover;" alt="">
-                </div>
-                <div class="col-md-6 d-flex align-items-center justify-content-start" id="about_description">
-                    <div class="container ">
-                        <p class="head_text main_text">Hi There ! I am <span class="imp_text"
-                                id="about_name">Shishir</span></p>
-                        <p class="head_text text1 contain_text">I am a Full Stack Web Developer with knowledge
-                            on
-                        </p>
-                        <p>
-                            <span id="text_change" class="imp_text">Java</span>
-
-                        </p>
-                        <p class="head_text text2 contain_text">I like creating user-centric
-                            <span>Products</span> with a touch of
-                            <span>Creativity</span>,
-                            <span>Minimalism</span> and
-                            bucket load of <span>Passion</span>.
-
-                        </p>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <main style="margin-top: 4rem;">
-        <div class="container" id="Projects">
-            <h1 class="text-center">Projects</h1>
-            <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-
-                        <img src="images/Projects/Expedia-2.jpg" class="d-block w-100" alt="Expedia-Clone">
-                        <div class="carousel-caption-2 d-md-block container ">
-                            <div class="container text-center">
-                                <h5>EXPEDIA- CLONE</h5>
-                                <p>Expedia is one of the fastest growing online travel portals in Asia, offering
-                                    travellers an extensive selection of
-                                    hotels, activities and travel services to meet every budget and activities of every
-                                    kind at competitive rates. With over
-                                    hundreds of thousands of hotel partners worldwide and a comprehensive offering of
-                                    flight inventory made available on the
-                                    website, travellers can book everything they need for a holiday - rooms to meet
-                                    every budget, activities of every kind
-                                    and travel services to complement. </p>
-                                <p class="tech-stack">TECH STACK : HTML | CSS | JAVASCRIPT | BOOTSTRAP</p>
-                            </div>
-                            <div class="d-flex justify-content-around">
-                                <button class="btn btn-primary margin-right-10px" id="btn-project"><a
-                                        href=" https://github.com/Shishir-1995/Expedia" target="_blank"
-                                        style=" text-decoration: none;">GITHUB</a> </button>
-                                <button class="btn btn-primary" id="btn-project"><a href="
-https://vermillion-sopapillas-3df9c0.netlify.app/" target=" _blank" style=" text-decoration: none;">LIVE</a> </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/Projects/TIc-tac-2.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption-2  d-md-block">
-                            <div class="container text-center">
-                                <h5>TIC-TAC-TOE</h5>
-                                <p>Tic Tac Toe is a two-player game in which the objective is to take turns and mark the
-                                    correct spaces in a 3x3 grid. Think on your feet but also be careful, as the first
-                                    player who places
-                                    three of their marks in a
-                                    horizontal, vertical or diagonal row wins the game! How many rounds in a row can you
-                                    win?
-                                    You will be playing against a bot.</p>
-                                <p class="tech-stack">TECH STACK : HTML | CSS | JAVASCRIPT | BOOTSTRAP</p>
-                            </div>
-                            <div class="d-flex justify-content-around">
-                                <button class="btn btn-primary" id="btn-project"><a
-                                        href=" https://github.com/Shishir-1995/Tic-Tac-Toe" target="_blank"
-                                        style=" text-decoration: none;">GITHUB</a>
-                                </button>
-                                <button class="btn btn-primary" id="btn-project"><a
-                                        href="https://immortal-tic-tac.netlify.app" target="_blank"
-                                        style=" text-decoration: none;">LIVE</a> </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://images.unsplash.com/photo-1516101922849-2bf0be616449?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80"
-                            class="d-block w-100 " alt="...">
-                        <div class="carousel-caption-2 d-md-block">
-                            <div class="container text-center">
-                                <h5>Place Holder for Java Project</h5>
-                                <p>Desciption of JAVA Project , TO BE ADDED IN UNIT 6</p>
-                                <p class="tech-stack">TECH STACK :JAVA TECH STACKS</p>
-
-                            </div>
-                            <div class="d-flex justify-content-around">
-                                <button class="btn btn-primary" id="btn-project"><a href=""
-                                        style="text-decoration: none;">GITHUB</a> </button>
-                                <button class="btn btn-primary" id="btn-project"><a href=""
-                                        style="text-decoration: none;">LIVE</a> </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev dark type=" button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div>
-
-        <div class="fluid-container" id="Skills">
-            <h1 class="text-center">Skills</h1>
-            <div class="tech_skill_section">
-                <h3 class="text-center">Technical Skills</h3>
-                <section class="techstack">
-                    <div class="container">
-                        <div class="row">
-
-                            <div class="col col-md-3 col-sm-6 slide">
-                                <img src="images/tech-icons/java.png" height="75" width="250" alt="">
-                                JAVA
-                            </div>
-                            <div class="col col-md-3 col-sm-6 slide">
-                                <img src="images/tech-icons/spring.png" height="75" width="100" alt="">
-                                SPRING
-                            </div>
-                            <div class="col col-md-3 col-sm-6 slide">
-                                <img src="images/tech-icons/hibernate.png" height="75" width="250" alt="">
-                                HIBERNATE
-                            </div>
-                            <div class="col col-md-3 col-sm-6 slide">
-                                <img src="images/tech-icons/mysql.png" width="100" alt="">
-                                MYSQL
-                            </div>
-                            <div class="col col-md-3 col-sm-6 slide">
-                                <img src="images/tech-icons/javascript.svg" height="75" width="250" alt="">
-                                JAVASCRIPT
-                            </div>
-                            <div class="col col-md-3 col-sm-6 slide">
-                                <img src="images/tech-icons/html.png" height="75" width="150" alt="">
-                                HTML 5
-                            </div>
-                            <div class="col col-md-3 col-sm-6 slide">
-                                <img src="images/tech-icons/css.png" height="75" width="250" alt="">
-                                CSS 3
-                            </div>
-                            <div class="col col-md-3 col-sm-6 slide">
-                                <img src="images/tech-icons/aws.png" height="75" width="250" alt="">
-                                AWS
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-            </div>
-
-            <div class="soft_skill_section">
-                <h3 class="text-center">Soft Skill</h3>
-                <div id="carouselExampleFade" class="carousel slide " data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <p>Work Ethics</p>
-                        </div>
-                        <div class="carousel-item">
-                            <p>Discipline</p>
-                        </div>
-                        <div class="carousel-item">
-                            <p>Team Player</p>
-                        </div>
-                        <div class="carousel-item">
-                            <p>Goal Oriented</p>
-                        </div>
-                        <div class="carousel-item">
-                            <p>Organized</p>
-                        </div>
-                        <div class="carousel-item">
-                            <p>Social Adaptibility</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <h1 class="text-center">STATS</h1>
-            <div <!-- class=" d-flex justify-content-center align-items-center" -->
-                <img src="https://github.com/Shishir-1995/Shishir-1995/raw/main/profile-3d-contrib/profile-night-green.svg"
-                    alt="GITHUB STATS" style="width: 60%;">
-
-            </div>
+    <!-- Header -->
+    <header id="masthead" class="site-header">
+        <nav id="primary-navigation" class="site-navigation" data-spy="affix">
             <div class="container">
-                <div class="calendar">
-                    <!-- Loading stuff -->
-                    Loading the data just for you.
+                <div class="navbar-header page-scroll">
+
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#portfolio-perfect-collapse" aria-expanded="false">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <!-- Name -->
+                    <div class="page-scroll site-logo">
+                        <a href="#top">Shishir</a>
+                    </div>
+
+                </div><!-- /.navbar-header -->
+
+                <div class="main-menu collapse navbar-collapse" id="portfolio-perfect-collapse">
+
+                    <!-- Navigation -->
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li class="page-scroll"><a href="#intro">Home</a></li>
+                        <li class="page-scroll"><a href="#intro">About Me</a></li>
+                        <li class="page-scroll"><a href="#skills">Skills</a></li>
+                        <li class="page-scroll"><a href="#services">Projects</a></li>
+                        <li class="page-scroll"><a href="#contact">Contact</a></li>
+                        <li class="page-scroll"><a href="assets/documents/Shishir_Padhan-Resume.pdf"
+                                download="Shishir_Padhan-Resume.pdf">Resume</a></li>
+
+
+                    </ul><!-- /.navbar-nav -->
+
+                </div><!-- /.navbar-collapse -->
+            </div>
+        </nav><!-- /.primary-navigation -->
+    </header><!-- /#header -->
+    <!-- End Header -->
+
+    <!-- Main content -->
+    <main id="main" class="site-main">
+
+        <!-- Hello section -->
+        <section class="site-section section-hello" id="intro">
+            <div class="container">
+                <h2>Hi There !</h2>
+                <p class="section-subtitle"><span>I am SHISHIR PADHAN</span></p>
+                <div class="row">
+
+                    <div class="col-sm-4">
+                        <div class="big-rectangle">
+                            <!-- <img src="assets/img/pp-2.png" alt=""> -->
+                        </div><!-- /.big-rectangle -->
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="main-service text-left">
+                            <!-- <div class="rectangle"> -->
+                            <!-- <i class="fa fa-check" aria-hidden="true"></i> -->
+                            <!-- </div> -->
+
+                            <p style="font-weight: 700; font-size: 14px;">An Enthusiastic Programmer who likes to solve
+                                puzzles and learn
+                                new
+                                technology. </p>
+                            <p style="font-weight: 700; font-size: 14px;">A collaborative person with experience in
+                                working with team, completing the given task in
+                                due time and learn from peers.</p>
+                            <p style="font-weight: 700; font-size: 14px;">A programmer by heart, problem solver by skill
+                                and an avid learner by passion.</p>
+                        </div><!-- /.main-service -->
+
+                    </div>
                 </div>
             </div>
-        </div>
-        </div>
+        </section><!-- /.section-hello -->
+        <!-- End Hello section -->
 
-        <div class="container" id="Contact">
-            <h1 class="text-center">Contact</h1>
-            <section id="contact" class="contactMe">
-                <div class="contact">
+        <!-- Quote section -->
+        <section class="section-background section-quote background-overlay text-center">
+            <!-- <div class="container">
+                <p>We make our <span>work look good</span> &amp; have experience in the creation of brand identities for
+                    <span>print &amp; web</span>, with a difference.
+                </p>
+            </div> -->
+        </section><!-- /.section-quote -->
+        <!-- End Quote section -->
 
+        <!-- About section -->
+
+        <!-- End About section -->
+
+        <!-- Skills section -->
+        <section class="site-section section-skills">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>My GITHUB</h2>
+
+                        <!-- <div class="calendar">
+                            <!-- Loading stuff -->
+                        <!-- Loading the data just for you. -->
+                        <!-- </div>  -->
+
+
+                        <!-- <iframe src="https://player.vimeo.com/video/158928871" width="100%" height="280" frameborder="0"
+                            webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
+                        <div style="display: flex;flex-wrap: wrap;">
+
+                            <img src="https://github.com/Shishir-1995/Shishir-1995/raw/main/profile-3d-contrib/profile-night-green.svg"
+                                alt="Git-3D" style="margin: auto;height: 80%;width: 60%;">
+
+
+                            <img src="https://camo.githubusercontent.com/6e65c0fac08b531bfa88944d1a820525980b84c0b6a0e70aeadc6fb970e464d1/68747470733a2f2f6769746875622d726561646d652d73747265616b2d73746174732e6865726f6b756170702e636f6d2f3f757365723d536869736869722d31393935267468656d653d7261646963616c26686964655f626f726465723d66616c7365"
+                                alt="" style="width: 60%;height: 80%;margin: auto;">
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section><!-- /.section-skills -->
+        <!-- End Skills section -->
+
+        <!-- Counters section -->
+        <section class="site-section section-counters text-center" id="skills">
+            <h2>Skills</h2>
+            <p class="section-subtitle"><span>Always Learning something new</span></p>
+            <div class="container" style="padding-top: 20px;">
+                <div class="row">
+                    <div class="col-sm-2 col-xs-6 col-sm-offset-1">
+                        <div class="counter">
+                            <div class="rectangle medium-rectangle ">
+                                <img src="https://logos-world.net/wp-content/uploads/2022/07/Java-Logo.png" alt=""
+                                    style="height: 60px;width: 90px;">
+                                <!-- <span class="counter-start" data-to="1200" data-speed="2000">1200</span> -->
+                            </div><!-- /.rectangle -->
+                            <p>JAVA</p>
+                        </div><!-- /.counter -->
+                    </div>
+                    <div class="col-sm-2 col-xs-6">
+                        <div class="counter">
+                            <div class="rectangle medium-rectangle ">
+                                <img src="https://img.stackshare.io/service/1756/1uNl_IZX.png" alt=""
+                                    style="height: 50px;width: 60px;">
+                            </div><!-- /.rectangle -->
+                            <p>Hibernate</p>
+                        </div><!-- /.counter -->
+                    </div>
+                    <div class="col-sm-2 col-xs-6">
+                        <div class="counter">
+                            <div class="rectangle medium-rectangle ">
+                                <img src="https://www.freepnglogos.com/uploads/javascript-png/javascript-logo-transparent-logo-javascript-images-3.png"
+                                    alt="" style="height: 50px;width: 80px;">
+                            </div><!-- /.rectangle -->
+                            <p>JavaScript</p>
+                        </div><!-- /.counter -->
+                    </div>
+                    <div class="col-sm-2 col-xs-6">
+                        <div class="counter">
+                            <div class="rectangle medium-rectangle ">
+                                <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png" alt=""
+                                    style="height: 50px;width: 50px;">
+                            </div><!-- /.rectangle -->
+                            <p>HTML</p>
+                        </div><!-- /.counter -->
+                    </div>
+                    <div class="col-sm-2 col-xs-12">
+                        <div class="counter">
+                            <div class="rectangle medium-rectangle ">
+                                <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png" alt=""
+                                    style="height: 50px;width: 50px;">
+                            </div><!-- /.rectangle -->
+                            <p>CSS</p>
+                        </div><!-- /.counter -->
+                    </div>
+                </div>
+
+
+            </div>
+        </section><!-- /.section-counters -->
+        <!-- End Counters section -->
+
+        <!-- Services section -->
+        <section class="site-section section-services" id="services">
+
+            <div class="container-fluid">
+                <h2>Projects</h2>
+                <p class="section-subtitle"><span>Fun of learning is in its implementation</span></p>
+            </div>
+
+            <div class="container">
+
+
+
+
+
+
+                <!-- Item 1 -->
+                <div id="item1 " class="item tab-pane active proj-card">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="service-info">
+                                <h3 class="service-title">EXPEDIA-CLONE</h3>
+                                <p>Expedia is one of the fastest growing online travel portals in Asia, offering
+                                    travellers an extensive selection of hotels, activities and
+                                    travel services to meet every budget and activities of every kind at
+                                    competitive rates. With over hundreds of thousands
+                                    of hotel partners worldwide and a comprehensive offering of flight inventory
+                                    made available on the website, travellers
+                                    can book everything they need for a holiday - rooms to meet every budget,
+                                    activities of every kind and travel services
+                                    to complement.
+                                </p>
+                                <p style="font-weight:700"><span>TECH : </span>HTML | CSS | JavaScript |
+                                    BOOTSTRAP
+                                </p>
+                            </div>
+                            <button style="background-color: #196fc2;"><a href="https://github.com/Shishir-1995/Expedia"
+                                    target="_blank" style="color:white;">GITHUB</a></button>
+                            <button style="background-color: #196fc2;"><a href="
+                                https://expedia-masai.netlify.app/index.html" target="_blank"
+                                    style="color:white;">LIVE</a></button>
+                        </div>
+                        <div class="col-md-7">
+                            <img src="assets/img/Expedia-Hero.jpg" class="img-responsive" alt="">
+                        </div>
+                    </div>
+                </div><!-- /.item -->
+                <!-- Item 2 -->
+                <div id="item2" class="proj-card">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="service-info">
+                                <h3 class="service-title">TRIPOTO- CLONE</h3>
+                                <p>Tripoto is one of the largest community of travellers in the world. Members
+                                    of the Tripoto community are travel savvy
+                                    and travel often. We empower our travellers with fascinating itineraries,
+                                    and our partners with innovative solutions to
+                                    boost their business. </p>
+                                <p>This is a clone of the original website made in collaboration with awesome
+                                    developers.</p>
+                                <p style=" font-weight:700"><span>TECH : </span>HTML | CSS | JavaScript |
+                                    BOOTSTRAP
+                                </p>
+
+                                <!-- <p>While a good design can impress the users, it is the codes and development
+                                            process that ensures that your target users will find the browsing
+                                            experience equally amazing as your design. </p> -->
+                            </div>
+                            <button style="background-color: #196fc2;"><a
+                                    href="https://github.com/Tripoto-Clone/Tripoto-clone" target="_blank"
+                                    style="color:white;">GITHUB</a></button>
+                            <button style="background-color: #196fc2;"><a
+                                    href="https://relaxed-cendol-3baf42.netlify.app/detail-page/tripoto.html"
+                                    target="_blank" style="color:white;">LIVE</a></button>
+                        </div>
+                        <div class="col-md-7">
+                            <img src="assets/img/Tripoto-Hero.jpg" class="img-responsive" alt="">
+                        </div>
+                    </div>
+                </div><!-- /.item -->
+                <!-- Item 3 -->
+                <div id="item3" class="item tab-pane proj-card">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="service-info">
+                                <h3 class="service-title">TIC-TAC-TOE</h3>
+                                <p>Tic-Tac-Toe is a two player game in which the objective is to take turns and
+                                    mark the correct spaces in a 3x3 grid. Think on your feet but also be
+                                    careful, as the first player who places three of their marks in a
+                                    horizontal, vertical or diagonal row wins the game!
+                                    How many rounds in a row can you win? You will be playing against a bot.</p>
+                                <p style=" font-weight:700"><span>TECH : </span>HTML | CSS | JavaScript
+                                </p>
+                            </div>
+                            <button style="background-color: #196fc2;"><a
+                                    href="https://github.com/Shishir-1995/Tic-Tac-Toe" target="_blank"
+                                    style="color:white;">GITHUB</a></button>
+                            <button style="background-color: #196fc2;"><a href="https://immortal-tic-tac.netlify.app/"
+                                    target="_blank" style="color:white;">LIVE</a></button>
+                        </div>
+                        <div class="col-md-7">
+                            <img src="assets/img/Tic-tac-Hero.jpg" class="img-responsive" alt="">
+                        </div>
+                    </div>
+                </div><!-- /.item -->
+                <!-- Item 4 -->
+                <div id="item4" class="item tab-pane proj-card">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="service-info">
+                                <h3 class="service-title">STUDENT REGISTRATION</h3>
+                                <p>This is a backend programme to handle Student Registration. This handles admin and
+                                    Student login along with that separate authentication and authorization for each
+                                    type of users. Based on user, it shows different menu and also it gives different
+                                    level of access to admin and other users.</p>
+                                <p>This is made using Java and MySQL database using JDBC.</p>
+                                <p style=" font-weight:700"><span>TECH : </span>JAVA | Spring | MySQL
+                                </p>
+                            </div>
+                            <button style="background-color: #196fc2;"><a
+                                    href="https://github.com/Shishir-1995/amazing-shape-3534" target="_blank"
+                                    style="color:white;">GITHUB</a></button>
+                            <button style="background-color: #196fc2;"><a href="https://youtu.be/3MyfrSYG3x0"
+                                    target="_blank" style="color:white;">VIDEO</a></button>
+                        </div>
+                        <div class="col-md-7">
+                            <img src="assets/img/seo-optimization.jpg" class="img-responsive" alt="">
+                        </div>
+                    </div>
+                </div><!-- /.item -->
+                <!-- Item 5 -->
+                <div id="item5" class="item tab-pane proj-card">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="service-info">
+                                <h3 class="service-title">JAVA PROJECT 2</h3>
+                                <p>WORK IN PROGRESS...</p>
+                            </div>
+                            <button style="background-color: #196fc2; color: white;">GITHUB</button>
+                            <button style="background-color: #196fc2; color: white;">VIDEO</button>
+                        </div>
+                        <div class="col-md-7">
+                            <img src="assets/img/social-media.jpg" class="img-responsive" alt="">
+                        </div>
+                    </div>
+                </div><!-- /.item -->
+                <!-- </div>/.carousel-inner -->
+            </div>
+            </div>
+        </section><!-- /.section-services -->
+        <!-- End Services section -->
+
+
+
+
+
+        <!-- Contacts section -->
+        <section class="site-section section-contact" id="contact">
+            <div class="container" style="background-color: rgb(202, 199, 199);">
+                <h2>CONTACT ME</h2>
+                <p class="section-subtitle"><span>Connect and collaborate</span></p>
+                <div class="row">
                     <form class="form" action="https://formsubmit.co/72715828a509933f55dd08e0a5574760" method="POST">
-                        <input type="text" placeholder="Hey There! ... " class="name" name="name">
-                        <input type="email" name="email" placeholder="@Email please ..." class="email" required>
-                        <textarea name="textarea" class="textarea" rows="10"
-                            placeholder="Let's connect ... :)"></textarea>
-                        <input type="submit" value="SEND >" name="submit">
+                        <div class="col-md-4">
+                            <input class="form-control" type="text" placeholder="Name" required>
+                        </div>
+                        <div class="col-md-4">
+                            <input class="form-control" type="email" placeholder="Email" required>
+                        </div>
+                        <div class="col-md-4">
+                            <input class="form-control" type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="col-sm-12">
+                            <textarea class="form-control" placeholder="Your Message" required></textarea>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <button class="btn btn-inverted">Send Message</button>
+                        </div>
                     </form>
                 </div>
-
-            </section>
-
-
-        </div>
-
-        <div style="width: 97vw;margin:auto;">
-
-            <div class="row ">
-                <div class="col d-flex justify-content-between align-items-center" id="contact-img">
-                    <a href="https://www.linkedin.com/in/shishir1995/" target="_blank"><img
-                            src="images/contact-icon/linkedin.png" alt="LinkedIn"></a>
-                    <a href="https://github.com/Shishir-1995" target="_blank"><img src="images/contact-icon/github.png"
-                            alt="GitHub"></a>
-                    <a href="https://wa.me/917008356691?text=Hello!" target="_blank"><img
-                            src="images/contact-icon/whatsapp.png" alt="WhatsApp"></a>
-                    <a href="mailto: padhanshishir@gmail.com" target="_blank"><img src="images/contact-icon/gmail.png"
-                            alt="Telegram"></a>
-                </div>
-
             </div>
-        </div>
-    </main>
-</body>
+        </section><!-- /.section-contact-->
+        <!-- End Contacts section -->
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
-</script>
-<script src="index.js"></script>
+        <!-- Social Networks section -->
+        <section class="section-networks blue-bg">
+            <div class="container">
+                <!-- <a href="#" class="rectangle">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a href="#" class="rectangle">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                <a href="#" class="rectangle">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a href="#" class="rectangle">
+                    <i class="fa fa-youtube-play"></i>
+                </a>
+                <a href="#" class="rectangle">
+                    <i class="fa fa-envelope"></i>
+                </a>
+                <a href="#" class="rectangle">
+                    <i class="fa fa-dribbble"></i>
+                </a> -->
+            </div>
+        </section><!-- /.section-networks-->
+        <!-- End Social Networks section -->
+
+    </main><!-- /#main -->
+    <!-- End Main content -->
+
+
+
+
+
+
+
+    <script src="assets/js/github.js"></script>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- jQuery core js | Do not Delete -->
+    <script src="assets/js/jquery.min.js"></script>
+
+    <!-- Bootstrap core js | Do not Delete -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap progressbar JS -->
+    <script src="assets/js/bootstrap-progressbar.min.js"></script>
+
+    <!-- Count To JS -->
+    <script src="assets/js/jquery.countTo.min.js"></script>
+
+    <!-- Easing JS -->
+    <script src="assets/js/jquery.easing.min.js"></script>
+
+    <!-- Shuffle JS -->
+    <script src="assets/js/jquery.shuffle.min.js"></script>
+
+    <!-- Slick Carousel JS -->
+    <script src="assets/js/slick.min.js"></script>
+
+    <!-- Touchswipe JS -->
+    <script src="assets/js/touchswipe.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+
+
+
+</body>
 
 </html>
